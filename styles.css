@@ -187,6 +187,12 @@ main {
   font-size: 0.85rem;
 }
 
+.hero-card-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 .section {
   margin-bottom: 4rem;
 }
@@ -214,6 +220,14 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.skills-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.two-column {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
 .card {
   background: var(--card);
   padding: 1.8rem;
@@ -231,6 +245,20 @@ main {
   color: var(--muted);
   display: grid;
   gap: 0.4rem;
+}
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill-group span {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  color: var(--accent);
+  font-size: 0.8rem;
 }
 
 .experience .timeline {
@@ -270,6 +298,17 @@ main {
   max-width: 520px;
 }
 
+.contact-details {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+}
+
+.contact-details strong {
+  color: var(--text);
+}
+
 .contact-actions {
   display: flex;
   gap: 1rem;
@@ -283,7 +322,7 @@ main {
   border-top: 1px solid var(--border);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav {
     flex-direction: column;
   }
@@ -292,8 +331,18 @@ main {
     flex-wrap: wrap;
     justify-content: center;
   }
+}
 
+@media (max-width: 600px) {
   .hero {
     margin-top: 1rem;
+  }
+
+  .hero-card {
+    padding: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 2rem;
   }
 }
